@@ -1,4 +1,7 @@
->Sitação é assim
+>Este é um *blockquote*. O sinal usado abre e fecha este código no HTML. 
+>Para adicionar mais uma linha à citação, basta teclar Enter para um novo
+>código sinal. Isso gerará um novo parágrafo dentro do *blockquote*.
+>Códigos de **negrito**, _itálico_ e <https://links.com> funcionam aqui.
 
 Exemplos de Titulação
 # titulo nivel 1
@@ -10,7 +13,7 @@ exemplos de ênfase
 *Italico assim* ou _Assim_ 
 
 Links 
-podem ser links diretos<> ou textos ancoras <[]()
+>podem ser links diretos<> ou textos ancoras []()
 
 exemplo link direto 
 <https://www.teste.com>
@@ -35,4 +38,26 @@ IMAGENS
 
 Exemplo de uso de imagem
 ![Logo Html](exercicios/ex003/logohtml-200.png)
+
+
+Código (Code Highlight)
+Esta é uma linha que contém um ˋcódigoˋ.
+
+ˋˋˋ
+Esta é uma linha de código
+ ˋˋˋ
+
+ >Para especificar que tipo de linguagem está sendo apresentada no bloco de códigos adicionando o nome da linguagem de programação após o ˋˋˋ ou ~~~, por exemplo ~~~javascript ou ~~~ruby. Veja nos exemplos abaixo:
+
+ ~~~javascript
+Esta é uma linha de código em Javascript.
+~~~
+
+~~~php
+Esta é uma linha de código em PHP.
+~~~
+
+~~~html
+Esta é uma linha de código em HTML.
+~~~
 
