@@ -1,3 +1,5 @@
+>Sitação é assim
+
 Exemplos de Titulação
 # titulo nivel 1
 ## Titulo nível 2
@@ -8,7 +10,7 @@ exemplos de ênfase
 *Italico assim* ou _Assim_ 
 
 Links 
-podem ser links diretos<> ou textos ancoras[]()
+podem ser links diretos<> ou textos ancoras <[]()
 
 exemplo link direto 
 <https://www.teste.com>
