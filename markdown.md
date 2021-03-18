@@ -25,11 +25,16 @@ Lista de itens
 
 Exemplo de lista não ordenada 
 * Item 1
+   * sub-item
+   * sub-item
+      * Sub-sub-item
 * Item 2
 * Item 3
 
 exemplo de lista ordenada
 1. primeiro Item
+   1. sub-item
+      1. sub-sub-item
 2. Segundo Item
 3. Terceiro Item
 
