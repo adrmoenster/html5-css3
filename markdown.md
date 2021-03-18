@@ -67,6 +67,12 @@ Esta é uma linha de código em Javascript.
 
 ~~~php
 Esta é uma linha de código em PHP.
+`<?php
+    for(c=1; c <10; c++){
+        print('olá mundo!');
+    }
+
+?>`
 ~~~
 
 ~~~html
