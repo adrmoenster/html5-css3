@@ -106,4 +106,4 @@ Valor | Valor | Valor
 
 Utilizando Emoji
 
-Olá, pequeno Gafanhoto :vulcansalut: :hand:
+Olá, pequeno Gafanhoto :heart: :hand:
