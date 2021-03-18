@@ -68,7 +68,7 @@ document.getElementById()
 ~~~php
 Esta é uma linha de código em PHP.
 <?php
-    for(c=1; c <10; c++){
+    for(c=1; c<10; c++){
         print('olá mundo!');
     }
 
@@ -103,3 +103,7 @@ Alinhado a esquerda | Centralizado | Alinhado a direita
 :--------- | :------: | -------:
 Valor | Valor | Valor
 
+
+Utilizando Emoji
+
+Olá, pequeno Gafanhoto :vulcansalut :hand
