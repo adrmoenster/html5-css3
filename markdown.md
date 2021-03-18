@@ -62,8 +62,8 @@ Esta é uma linha de código
 
 ~~~javascript
 Esta é uma linha de código em Javascript.
+`document.getElementById()`
 ~~~
-`print('olá')`
 
 ~~~php
 Esta é uma linha de código em PHP.
