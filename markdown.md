@@ -71,6 +71,7 @@ Esta é uma linha de código em PHP.
 
 ~~~html
 Esta é uma linha de código em HTML.
+`<h1>Aqui o código html</h1>`
 ~~~
 
 
