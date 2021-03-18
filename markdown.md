@@ -63,6 +63,7 @@ Esta é uma linha de código
 ~~~javascript
 Esta é uma linha de código em Javascript.
 ~~~
+`print('olá')`
 
 ~~~php
 Esta é uma linha de código em PHP.
