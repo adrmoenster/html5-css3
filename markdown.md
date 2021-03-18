@@ -109,3 +109,8 @@ Utilizando Emoji
 Olá, pequeno Gafanhoto :heart: :hand:
 
 lista completa no repositório <https://github.com/ikatyang/emoji-cheat-sheet>
+
+
+MARCAR ALGUÉM
+
+só colocar @nomenoguit
