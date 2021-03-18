@@ -62,22 +62,22 @@ Esta é uma linha de código
 
 ~~~javascript
 Esta é uma linha de código em Javascript.
-`document.getElementById()`
+document.getElementById()
 ~~~
 
 ~~~php
 Esta é uma linha de código em PHP.
-`<?php
+<?php
     for(c=1; c <10; c++){
         print('olá mundo!');
     }
 
-?>`
+?>
 ~~~
 
 ~~~html
 Esta é uma linha de código em HTML.
-`<h1>Aqui o código html</h1>`
+<h1>Aqui o código html</h1>
 ~~~
 
 
