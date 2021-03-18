@@ -39,8 +39,8 @@ exemplo de lista ordenada
 3. Terceiro Item
 
 Lista de tarefas exemplo
-- [*] Criar página principal
-- [ ] criar página da loja
+- [x] Criar página principal
+- [x] criar página da loja
 - [ ] Finalizar reunião com Cliente
 - [ ] Receber pagamento
 
