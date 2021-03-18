@@ -23,13 +23,13 @@ exemplo de texto ancora
 
 Lista de itens
 
-Exemplo de lista não ordenada 
+Exemplo de lista não ordenada pode usar traço ou asteristico
 * Item 1
    * sub-item
    * sub-item
       * Sub-sub-item
-* Item 2
-* Item 3
+- Item 2
+- Item 3
 
 exemplo de lista ordenada
 1. primeiro Item
@@ -37,6 +37,12 @@ exemplo de lista ordenada
       1. sub-sub-item
 2. Segundo Item
 3. Terceiro Item
+
+Lista de tarefas exemplo
+- [*] Criar página principal
+- [ ] criar página da loja
+- [ ] Finalizar reunião com Cliente
+- [ ] Receber pagamento
 
 IMAGENS
 >Para inserir uma Imagem ! seguido de [Alt ou titulo da imagem](URL da imagem)
