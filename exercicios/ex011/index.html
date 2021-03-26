@@ -14,5 +14,40 @@
         <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
         <img src="img/foto-g.png" alt="Foto Grande"><!--Importante ordem ser de baixo para cima e primeiro deve se iniciar com maior imagem e ir diminuindo para cada resolução desejada. ter uma imagem ideal para cada resolução, aconselhado cropar imagem assim retirando oque não é desejado da imagem-->
     </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/cine.mp3" controls autoplay>vamos lá</audio>--><!--maneira mais simples, limitada-->
+
+    <!--Abaixo forma mais usada e mais recente-->
+    <audio preload="metadata" autoplay controls loop> <!--preload="auto" tem risco porque com esta opção ele só considera que site terminou de carregar quando o audio também tiver carregado-->
+        <source src="midia/cine.mp3" type="audio/mpeg">
+        <source src="midia/cine.ogg" type="audio/ogg">
+        <source src="midia/cine.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/cine.mp3">Clique aqui para baixar o arquivo</a> </p>
+    </audio>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!--Maneira de uso mais antigo-->
+    <!--<video src="midia/limao.ogv" width="500" controls></video>-->
+    
+    <!--Forma de uso de vídeos utilizado atualmente, mas consumo de banda pode ser alto pois o vídeo está localmente-->
+    <video width="560" poster="img/foto-m.png" controls autoplay loop><!--poster="img/foto-m.png" aqui se definiu a capa do vídeo, que é a que aparece antes de iniciar o vídeo-->
+        <!--Colocar src preferencialmente na ordem do video menor em tamanho para o maior, mesmo vídeo em formatos diferentes-->
+        <source src="midia/limao.ogv" type="video/mp4"><!--Primenro tenta carregar esse vídeo-->
+        <source src="midia/limao.webm" type="video/webm"><!--Segundo tenta carregar esse vídeo-->
+        <source src="midia/limao.m4v" type="video/m4v"><!--terceiro tenta carregar esse vídeo-->
+        <source src="midia/limao.mp4" type="video/mp4"><!--quarto tenta carregar esse vídeo-->
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p><!--Se nenhum vídeo for compativel ai mostra essa mensagem-->  
+    </video>
+
+    <h1>Inserindo vídeos hospedados externalmente youtube.</h1>
+    <p>Este vídeo está hospedados externamente, no youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo hospedados externalmente Vimeo</h1>
+    <p>Este vídeo está hospedado externalmente, no Vímeo</p>
+    <iframe src="https://player.vimeo.com/video/191894507?color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
