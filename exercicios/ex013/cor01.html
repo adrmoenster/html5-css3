@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores em CSS</title>
+</head>
+<body>
+    <!--Representação por nome-->
+    <h2 style="background-color: blue; color: white;">Exemplo de Cores</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae quos sed, perferendis unde necessitatibus? Temporibus aperiam, dolores nam accusamus, optio nesciunt nulla dolorum ipsum corporis, harum excepturi incidunt repellat?</p>
+
+    <!--Representação por códigos Hexadecimais-->
+    <!--decimal é 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal é 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+    <!--Exemplo #0000ff primeiros 00 são referente cor vermelha, depois os segundo 00 são referente cor verde, e por ultimo ff são referente cor azul que nesse caso é ff, então é 00(nada) de vermelho, 00(nada) de verde e por fim ff(máximo) de azul
+    OBS. se querer determinar também transparencia ai adiciona mais dois caracteres que vão de 00 a 100 ficaria assim por exemplo #0000ff60-->
+    <h2 style="background-color: #0000ff; color: #FFFFFF;">Exemplo de Cores</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae quos sed, perferendis unde necessitatibus? Temporibus aperiam, dolores nam accusamus, optio nesciunt nulla dolorum ipsum corporis, harum excepturi incidunt repellat?</p>
+
+    <!--rgb significa red, green, blue então como na hexadecimal deve informar valor para cada uma dessas 3 cores, mas valores vão de 0(nada) a 255(tudo) 
+    OBS. se querer adicionar transparencia ai vira rgba onde a é alfa, exemplo: rgba(0, 0, 255, 0.376) transparencia vai de 0 a 1-->
+    <h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">Exemplo de Cores</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae quos sed, perferendis unde necessitatibus? Temporibus aperiam, dolores nam accusamus, optio nesciunt nulla dolorum ipsum corporis, harum excepturi incidunt repellat?</p>
+
+    <!--hsl significa Matiz, Saturação, Luminosidade(escrito em inglês)OBS. se querer adicionar transparencia ai vira hsla onde a é alfa, exemplo: hsla(240, 100%, 50%, 0.376) transparencia vai de 0 a 1-->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de Cores</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vitae quos sed, perferendis unde necessitatibus? Temporibus aperiam, dolores nam accusamus, optio nesciunt nulla dolorum ipsum corporis, harum excepturi incidunt repellat?</p>
+
+    
+</body>
+</html>
