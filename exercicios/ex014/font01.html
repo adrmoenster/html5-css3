@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /* font-size
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc  que são, centimetros, milimetros, polegadas, pixels, pontos, paica
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %  que são, (em)tamanho relativo ao tamanho do "M" de uma determinada fonte, (ex) relativo ao tamanho da altura x de uma fonte, (rem) parecido com o em mas esse relativo ao root, (vw) largura em % da vew port(tamanho da tela), (vh) altura da vew port
+
+            *************Recomendado pela W3C é px e em**************
+                           16px geralmente = 1em 
+            */  
+            
+            font-size: 1.1em;/*tamanho da font*/
+
+            /*font-weight: valores aceitos são lighter normal bold bolder. Ou então utiliza variacção numerica de vai de 100 a 900, mas, só funciona se a fonte usada possuir a opção colocada
+            */
+            font-weight: bold;/*peso da font*/    
+            
+            font-style: normal;/*font-style. Basicamente se define se deseja fonte em itálico ou normal*/
+
+            /*text-decoration: underline; Serve para colocar sublinhado e outras decorações, mas só se fonte permitir*/
+        }
+        h1{
+            /*shorthand é uma opção que agrupa várias informações*/
+
+            /* shorthand font, é forma de colocar varias informações da font em um mesmo local
+
+            ordem é 
+            font-style -> font-weight -> font-size -> font-family
+            a ordem é muito ***IMPORTANTE***
+            abaixo na pratica
+            */
+            font: italic bold 2.5em 'Times New Roman', Times, serif;
+
+        }
+
+        h2{
+            /*Aqui também usamos a shorthand mas não informamos se é itálico, mesmo assim funciona, oque não pode fazer é informar fora da ordem, deixar de informar algo é possível*/
+            font: bold 2em 'Times New Romam', Times, Serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repudiandae voluptas quod explicabo molestias nobis accusamus quis, itaque porro officia rem blanditiis autem similique ut aperiam cupiditate architecto, quia minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi quos id molestiae minima earum, molestias sit obcaecati doloribus impedit, animi, similique repellendus ex veritatis maiores reiciendis sint eveniet autem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro totam distinctio iusto aliquid tempore, odit ipsa adipisci dolorem, ex atque nemo! Perspiciatis officia est accusamus? Repellat corporis in possimus magnam.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur labore officiis ad consectetur. Unde exercitationem, incidunt illum tempora fugit reprehenderit, vero dicta repellendus non minima obcaecati consectetur libero nemo tenetur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam nostrum magni veritatis, labore placeat non, suscipit perferendis quidem animi est obcaecati? Corrupti magnam earum ut voluptate, at nam cupiditate quibusdam.</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+body{
+    background-image: linear-gradient(to right, #F2E0D0, #F2AD94);
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #b9836f57;/*5px para lado, 5px para baixo, 15px de espalhamento e a cor é mesma do dundo mas alguns tons mais escura e transparencia 57*/
+    width: 600px;
+    padding: 10px;
+    margin: auto;/*Centraliza independente do tamanho da tela*/
+}
+h1{
+    color: #8C4949;
+    text-align: center;
+    text-shadow: 1px 1px 2px #69373740;
+}
+
+h2{
+    color: #D96459;
+}
+
+p{
+    text-align: justify;
+}
