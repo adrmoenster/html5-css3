@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+    em HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+    obs abaixo foi colocado h1#principal isso quer dizer que toda tag "h1" com id "principal" recebe a alteração, se colocar só #principal ai indiferente se for "h1" ou outra tag recebe a alteração informada no css
+*/
+
+body{
+    background-color: rgb(165, 219, 112);
+}
+h1{
+    color: rgb(17, 32, 2);
+}
+h1#principal{
+    text-align: center;
+    background-color:rgb(17, 32, 2);
+    color: white;
+}
+
+h2{
+    color: rgb(59, 70, 48);
+}
