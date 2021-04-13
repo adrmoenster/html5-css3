@@ -1,8 +1,13 @@
 @charset "UTF-8";
 /*
     em HTML é id = em CSS é #
+obs abaixo foi colocado h1#principal isso quer dizer que toda tag "h1" com id "principal"(só uma que pode ter esse nome de id no html) recebe a alteração, se colocar só #principal ai indiferente se for "h1" ou outra tag recebe a alteração informada no css
+
     em HTML é class = em CSS é .
-    obs abaixo foi colocado h1#principal isso quer dizer que toda tag "h1" com id "principal" recebe a alteração, se colocar só #principal ai indiferente se for "h1" ou outra tag recebe a alteração informada no css
+obs. toda classe que possuir o mesmo nome recebe essa formatação, mas diferente do id, na class pode usar mesmo nome em várias tags
+
+**********Configurações de id sobrepõe as configurações de class*******
+
 */
 
 body{
@@ -19,4 +24,18 @@ h1#principal{
 
 h2{
     color: rgb(59, 70, 48);
+}
+h2.basico{/*ou .basico*/
+    color: green;
+}
+h2.intermediario{/*ou .intermediario*/
+    color: yellow;
+}
+.avancado{/*ou h2.avancado oque muda é que colocando h2 só afeta a classe se estiver em um h2, e sem h2 ai afeta todas as classes com mesmo nome*/
+    color: red;
+}
+
+/*Essa classe abaixo é para exemplo de uso com duas classes em uma mesma tag html com .class, ver no html seletor01.html*/
+.destaque{
+    background-color: rgba(212, 210, 40, 0.664);
 }

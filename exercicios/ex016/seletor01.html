@@ -10,19 +10,20 @@
 <body>
     <h1 id="principal">Criando Sites com HTML e CSS</h1>
     <h1>Aprendendo HTML</h1>
-    <h2>HTML básico</h2>
+    <h2 class="basico">HTML básico</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, laudantium corrupti fugiat quae laborum dolores veniam modi? Dignissimos assumenda repellendus, possimus magni sunt, delectus distinctio atque dolore placeat dolorem vitae.</p>
-    <h2>HTML intermediário</h2>
+    <h2 class="intermediario">HTML intermediário</h2>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint magni exercitationem nobis rerum, impedit illo nesciunt quod voluptatibus veniam odio neque voluptas, perspiciatis voluptatem aperiam consequatur distinctio id deleniti error.</p>
-    <h2>HTML avançado</h2>
+    <h2 class="avancado">HTML avançado</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet amet saepe assumenda, doloribus quos dolorem. Eum, culpa doloribus exercitationem in deleniti ipsum odio praesentium mollitia illum eos ratione consectetur consequatur.</p>
     <h1>Aprendendo CSSS</h1>
-    <h2>CSS básico</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus voluptatem hic delectus ex voluptate laboriosam in amet, eligendi officia enim. Eius esse natus voluptates atque commodi provident ea adipisci?</p>
-    <h2>CSS intermediário</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam numquam vel, facere perferendis repellendus rem provident dignissimos ipsum laborum quibusdam, earum explicabo. Debitis inventore quia quos perferendis ea quaerat accusantium.</p>
-    <h2>CSS avançado</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore distinctio ipsa ipsum quae, consequatur laboriosam hic, labore vitae molestias quis consectetur et est rerum. Sunt nisi quis suscipit placeat modi.</p>
+    <h2 class="basico">CSS básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatibus voluptatem hic <span class="basico">delectus ex </span><!--Aqui não sofre a alteração css da classe porque lá no css foi dterminado que afeta só quando for h2.basico -->delectus ex voluptate laboriosam in amet, eligendi officia enim. Eius esse natus voluptates atque commodi provident ea adipisci?</p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam numquam vel, facere perferendis repellendus rem provident dignissimos ipsum explicabo. Debitis inventore quia quos perferendis ea quaerat accusantium.</p>
+    <!-- Abaixo usando duas classes -->
+    <h2 class="avancado destaque">CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore distinctio ipsa ipsum quae, <span class="avancado">quibusdam, earum </span><!-- Aqui recebe mesma formatação da classe avancado porque no css foi definido .avancado e não h2.avancado-->consequatur laboriosam hic, labore vitae molestias quis consectetur et est rerum. Sunt nisi quis suscipit placeat modi.</p>
     
     
 </body>
