@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /*isso diz que afeta um paragrafo que é filho de uma div nesse caso não mostra o texto*/
+        div > p{
+            display: none;
+        }
+        /*Isso diz afeta o paragrafo mas na pseudo classe hover que é quando passar mouse, neste caso vai mostrar o texto oculto ao passar mouse*/
+        div:hover > p{
+            display: block;
+            color: red;
+            
+        }
+
+        /*Pseudo classes precisam estar relacionadas a um elemento ou uma classe, é representado por ":"    */
+        /* é uma configuração de estado
+        exemplos :hover é quando passar mouse
+                 :link é quando é um link*/
+
+        div:hover{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo do Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="d1">
+        Passe o Mouse aqui
+        <p>Texto Escondido</p>
+    </div>
+    <p>Fim do Exemplo</p>
+    
+</body>
+</html>
