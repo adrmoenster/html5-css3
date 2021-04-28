@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{/*Configuração blobal css*/
+                height: 100%;
+            }
+        body{
+            
+            /*Para fazer degrade se usa background-image*/
+
+            /*exemplo1
+            1-Direção 2-cor inicial 3-corfinal
+            background-image: linear-gradient(to right, white, blue); para direita de branco para azul
+            */
+            
+            /*exemplo2
+            trabalhando com graus no lugar de direção
+            background-image: linear-gradient(45deg, #159CEB, #27526B, #27526B);
+          */
+
+          /*exemplo3
+          trabalhando com gradiente radial ao invés de gradiente linear
+          background-image: radial-gradient(circle, #159CEB, #27526B, #117AB8);
+          */
+
+          /*exemplo4*/
+          /*definindo a pocentagem % de cada cor*/
+          background-image: linear-gradient(to right, #5DB9EE, #159CEB, #27526B 10%, #117AB8 20%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>
