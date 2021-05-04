@@ -31,24 +31,16 @@ h2{
     font-size: 2em;
     color: rgb(51, 6, 6);
 }
-h2#htmlb{
+.htmlb{/*pode colocar h2.htmlb ou então só .htmlb*/
     color: rgb(11, 99, 11);
 }
-h2#htmli{
+.htmli{/*pode colocar h2.htmli ou então só .htmli*/
     color: rgb(197, 134, 16);
 }
-h2#htmla{
+.htmla{/*pode colocar h2.htmla ou então só .htmla*/
     color: rgb(170, 6, 6);
 }
-h2#cssb{
-    color: rgb(28, 194, 28);
-}
-h2#cssi{
-    color: rgb(241, 172, 42);
-}
-h2#cssa{
-    color: rgb(235, 1, 1);
-}
+
 
 p{
     text-align: justify;
