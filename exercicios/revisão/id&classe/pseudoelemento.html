@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS
+            #  =  id
+            .  =  class
+            :  =  Pseudo-Class
+            :: =  Pseudo-Element
+            >  =  children(filho)
+        */
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: firebrick;
+            text-decoration: none;
+        }
+        a:visited{/*pseudoclasse*/
+            color: darkred;
+        }
+        a:hover{/*pseudoclasse*/
+            color: rgb(219, 35, 35);
+            text-decoration: underline;
+        }
+        a:active{/*pseudoclasse*/
+            color: chartreuse;
+        }
+
+        /*PSEUDO-ELEMENTO*/
+
+        a::before{/*Significa que antes de todos os links irá realizar essa ação*/
+            content: '⇒ ';
+        }
+        a::after{/*Significa que depois de todos os links irá realizar essa ação*/
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        /*utilizando Pseuso-elemento através de uma classe*/
+        .especial::before{
+            content: '✱ ';
+            color: darkgreen;
+        }
+        .especial::after{
+            content: ' ✳';
+            color: deepskyblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li> <a href="https://github.com/adrmoenster/html5-css3" target="_blank">Repositório GitHub </a></li>
+        <li> <a href="https://www.youtube.com/channel/UCkP-xTFd0xWt865sRXtIQ4A" target="_blank">Canal do YouTube </a></li>
+        <li> <a href="https://www.cursoemvideo.com/" target="_blank">Site do CursoemVideo </a></li>
+
+        <li> <a href="#" class="especial" target="_blank">Classe usando Pseudo elemento befor </a></li>
+
+        <li> <a href="#" class="especial" target="_blank" >Classe usando Pseudo elemento after </a></li>
+    </ul>
+</body>
+</html>
