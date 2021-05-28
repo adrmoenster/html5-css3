@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de caixas</title>
     <style>
-        h1{
+        /*h1{
             background-color: lightgray;
             height: 300px;
             width: 300px;
@@ -17,8 +17,40 @@
             padding-right: 10px;
             padding-bottom: 10px;
             padding-left: 10px;
+
+            /*margin: auto; Centraliza no meio da largura
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+
+            /* OUTLINE é tracejado que fica entre o paddin e o margin
+            outline-width: 5px;/*Largura linha
+            outline-style: dashed;/*Tipo de linha usada
+            outline-color: salmon;/*Cor da linha
+        }*/
+
+        /*Simplificando todo código acima*/
+
+        h1{/*Box-Level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            /*Usando Shorhand*/
+
+            /*Simplificando border - largura estilo cor*/
+            border: 10px solid darkslategray;
+
+            /*Simplificando padding - topo direita baixo esquerda*/
+            padding: 10px 10px 10px 10px;/*Se quatro valores forem iguais, pode infromar uma vez só "padding:10px;" */
+
+            /*Simplificando margin - topo direita baixo esquerda*/
+            margin: 10px 10px 30px 10px;
+
+            /*Simplificando outline - largura estilo cor*/
+            outline: 5px dashed salmon;
         }
-        a{
+        a{/*Inline-Level*/
             border-width: 10px;
             border-style: solid;
             border-color: red;
