@@ -21,7 +21,7 @@
             padding: 3px;
             /*Shorthand do box-shadow que é deslocamento horizontal, seguido de deslocamento vertida, seguido de espalhamento e por ultimo a cor
             box-shadow: 1px 1px 1px black;*/
-            box-shadow: 3px 3px 2px 1px rgba(3, 3, 3, 0.5);
+            box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.315);
         }
         nav > a{
             text-decoration: none;
@@ -35,7 +35,16 @@
         main{
             background-color: white;
             padding: 10px;
-            margin: 10px;;
+            margin: 10px;
+            /*border-radius pode ter configuração para cada um dos lados ex
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+                ou com shorthand
+            border-radius: 6px 5px 9px 6px;
+            */
+            border-radius: 6px;
         }
         article{
             background-color: lightgray;
@@ -54,6 +63,14 @@
         footer > p{
             margin: 0px;
         }
+        /*Exemplo criando uma bola(circulo)
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }*/
     </style>
 </head>
 <body>
@@ -87,5 +104,6 @@
     <footer>
         <p>Desenvolvido por Adriano S. Moenster</p>
     </footer>
+    <div id="bola"></div>
 </body>
 </html>
