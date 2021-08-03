@@ -33,7 +33,9 @@ body{
     font-family: var(--font-padrao);
 }
 
-
+a.externo::after{
+    content: '\00A0\1F517';
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -132,8 +134,40 @@ main img.pequena{
     display: block;/*com esse display block a imagem se torna um bloco e só então aceita comando a seguir*/
     margin: auto;/*por padrão uma imagem não é um bloco, por isso precisa por o display: block;*/
 }
+section > article > aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.280);
+}
+section > article > aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;/*margem negativa em cima, na direita e na esquerda, mas embaixo não*/
+    border-radius: 10px 10px 0px 0px;
 
+}
+section > article > aside > ul{
+    list-style-type: '\2714\00A0';/*Colocando um emotion como marcador da lista mas 00A0 é o espaço(não compativel com todos navegadores)*/
+    list-style-position: inside;/*Marcadores ja vem para dentro*/
+    columns: 2;/*Quantidade de colunas */
+}
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
 }
