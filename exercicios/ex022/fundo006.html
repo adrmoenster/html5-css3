@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            /*background-size: 100% 100%; Solução péssima para que a imagem vá preencher toda tela indiverente do tamanho do dispositivo usado para acessar --NÃO USAR*/
+            background-size: cover/*contain*/;/* "contain" faz com que a imagem seja 100% exibida(serve para casos especificos), "cover" cobre tela inteira mesmo que tenha que picotar a imagem(não mostra imagem toda em alguns casos, mas não distorce)*/
+        }
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            text-align: justify;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, excepturi expedita corrupti eius, eum aliquid quam ullam unde est iste ad enim aspernatur soluta officiis dolores placeat, culpa beatae et
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis magni sit adipisci animi alias expedita tenetur corporis consequatur iusto sed, possimus deserunt esse aspernatur dolorem officia id repellat quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque impedit eligendi eveniet enim, exercitationem aperiam aut fugiat dolore. Assumenda distinctio veritatis numquam dolores nulla fugiat tempore perferendis ab nobis reiciendis.
+        </p>
+    </main>
+</body>
+</html>
