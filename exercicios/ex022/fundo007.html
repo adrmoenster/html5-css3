@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        section#container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;/*faz parte para centralizar*/
+            height: 96vh;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        article#conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;/*faz parte para centralizar quando se usa esse posicionamento se pode usar as propriedades (left e top)*/
+
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            /*margin: auto;Maneira mais prática de centralizar horizontalmente o conteudo*/
+            left: 50%;/*Se usa essa opção após definir o position absolute*/
+            top: 50%;/*Se usa essa opção após definir o position absolute*/
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
