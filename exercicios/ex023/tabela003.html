@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Celulas</h1>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td><!--Expandida para "B" ocupar duas colunas-->
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td><!-- Expandida para "D" ocupar 3 linhas-->
+            <td>E</td>
+            <td rowspan="2">F</td><!--Expandida para "F" ocupar duas linhas-->
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            
+        </tr>
+        <tr>
+            
+            <td colspan="2">K</td><!--Expandindo para "K" ocupar duas colunas-->
+            
+        </tr>
+    </table>
+</body>
+</html>

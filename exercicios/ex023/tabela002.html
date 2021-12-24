@@ -13,12 +13,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*Configuração para fixar titulo da tabela*/
             
         }
         
         td, th{
             border:1px solid black;
             padding: 10px;
+            
         }
         caption{
             font-size: 1.5em;
@@ -30,6 +32,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;/*Colável grudável, essa é tradução, mas para funcionar a table precisa estar como relative e precisa ter também aqui a top: 0;*/
+            top:0;
+            background-color: rgb(99, 98, 98);
         }
         tbody > tr:nth-child(2n){/*usando pseudo classe, Assim consegue fazer efeito zebrado, de duas em duas linha realiza oque deseja, nesse caso coloca cor cinza, no lugar de 2n pode usar tambér ou impar que deria impar(odd) ou par(even) */
             background-color: lightgray;
