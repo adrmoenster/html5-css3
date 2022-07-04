@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iFrame</title>
+    <style>
+        /* Configuração de iframe 'quando feita em css' prevalesse sobre a configuração feita no html*/
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <h1>Testando o uso de um iframe!</h1>
+    <p>Acessando o site do 
+        <!-- Tamanho padrão do iFrame é de 300X150 pixels-->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500" scrolling="no"> <!--Opção scrolling define se tem rolagem (yes) se não (no) e opção (auto) que aparece rolagem se possuir rolagem-->
+            <a href="https://www.cursoemvideo.com" target="_blank"></a>
+        </iframe>
+     para aprender a programar.
+    </p>
+
+    <p>
+        O repositório do Adriano 
+        
+        <iframe src="https://github.com/adrmoenster" frameborder="0" height="500" width="500">
+            <a href="https://github.com/adrmoenster" target="_blank"></a>
+        </iframe>
+        também é bem legal
+    </p>
+</head>
+<body>
+    
+</body>
+</html>
