@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;/*Ocupando 95% da largura*/
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quod molestias ullam minima quia mollitia facilis, quidem tempore vitae saepe pariatur ad adipisci! Ea voluptas, est id enim mollitia inventore.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li><!--O targe="iframe" vai fazer abrir o link na tag iframe com name "frame" -->
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem voluptate nulla architecto voluptatibus blanditiis nemo numquam possimus deserunt. Possimus corrupti officia quas. Blanditiis necessitatibus maxime molestias similique nam, ea distinctio. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam odio illo minus assumenda, perspiciatis porro earum esse expedita saepe optio consequatur officia iste repellat, dolorum et, veritatis non dolor accusamus.</p>
+    <iframe id="tela" name="frame" src="">
+        <p>Infelizmente seu navegador não é compativel com isso.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi in eius officia ullam culpa architecto, possimus quo fugiat dolorum. Odio nisi ex veniam libero maiores? Sit enim rem laboriosam qui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis a, soluta tenetur delectus accusamus laudantium aliquam veniam repudiandae incidunt sapiente saepe suscipit vel amet quod totam vitae dignissimos repellat. Assumenda.</p>
+</body>
+</html>
