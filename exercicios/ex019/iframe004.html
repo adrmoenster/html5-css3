@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni beatae natus esse fugit eveniet eaque totam autem nesciunt corrupti distinctio. Nobis, quos fuga porro iure exercitationem necessitatibus vel obcaecati voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum officia distinctio corporis quam eius quas numquam cum ipsa id illum. Tempore maiores alias doloribus! Iste ex et nulla fuga maiores.</p>
+    <!--  sandbox="sandbox"    Bloqueia qualquer ação do iframe que possa ser maliciosa e de captura de dados, mas existe parametros que permitam algumas coisas, exemplo invés de "sandbox" colocar "allow-same-origin" ou ainda "allow-forms", "allow-scripts" e muitas outra opções-->
+    <!--referrerpolicy="no-referrer-when-downgrade" esta opção "no-referrer-when-downgrade" é padrão desta função e ajuda proteção em iframe, mas pode ser usado também "no-referrer" basicamente informa que oque está dentro do iframe não vai coletar informações do usuário-->
+    <iframe src="paginas-extras/pag004.html" sandbox="sandbox" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolorem dolor placeat officiis incidunt quasi repellat itaque ex! Nulla aperiam eaque porro? Impedit, architecto non molestias inventore eum corrupti tempore!</p>
+</body>
+</html>
