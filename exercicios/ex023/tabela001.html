@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;/*Retira uma borda pequena que cria inicialmente na tabela*/
+            border:5px solid green/*Colocando uma borda apenas no geral da tabela*/
+        }
+        tr{
+            background-color: gray;
+        }
+        tr.lin1{/*Trabalhando com uma classe em uma linha especifica da tabela*/
+            background-color: crimson;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        td.dado{/*Trabalhando com uma classe em um determinado dado da tabela*/
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha primeira Tabela</h1>
+    <!-- 
+        HIERARQUIA DE TABELAS (simples)
+        TABLE = tabela
+            TABLE ROW 'tr' = linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA 'td' = dado de tabela    
+
+                OBS. O W3C DEFINIU COMO OPCIONAL OS FECHAMENTOS DAS TAGS </tr> E </td> POR ISSO DOIS DUAS PRIMEITAS LINHAS SEM FECHAMENTO DE td e tr só de exemplo(Fechar as tgs garante menos possibilidades de erros)
+     -->
+    <table>
+        <!--Estrutura com uma linha e três dados-->
+        <tr class="lin1"><!-- Primeira linha-->
+            <td>A1
+            <td>B1
+            <td>C1
+
+        <!--Estrutura com uma linha e três dados-->
+        <tr><!-- Segunda linha-->
+            <td>A2
+            <td>B2
+            <td>C2
+        <!--Estrutura com uma linha e três dados-->
+        <!-- Terceira linha-->
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="dado">C3</td>
+        </tr>
+        <!--Estrutura com uma linha e três dados-->
+        <!-- Quarta linha-->
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+</body>
+</html>

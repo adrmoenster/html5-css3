@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(228, 228, 228);
+        }
+        div#container{/*Cria uma rolagem só para a Tabela quando tela for pequena*/
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Responsiva</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dolorum, nemo ea natus amet maxime. Pariatur accusamus veritatis reprehenderit atque non autem harum aspernatur, fugit porro? Laborum vitae id soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. In a eveniet nisi quasi fugit consequuntur saepe assumenda fugiat nostrum similique voluptatibus, nulla facilis. Porro obcaecati temporibus, esse perferendis illo possimus.</p>
+    <div id="container"><!--Aqui cerve para criar um container e assim possibilita que tabela crie uma rolagem própria-->
+        <table>
+            <caption>Tabelas Responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th>
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lava louças</td>
+                    <td>12</td>
+                    <td>07</td>
+                    <td>03</td>
+                    <td>10</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>08</td>
+                    <td>03</td>
+                    <td>06</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>Cerra marmore</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>04</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Furadeira</td>
+                    <td>06</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>06</td>
+                    <td>04</td>
+                    <td>03</td>
+                    <td>02</td>
+                </tr>
+                <tr>
+                    <td>Enchada</td>
+                    <td>22</td>
+                    <td>12</td>
+                    <td>20</td>
+                    <td>16</td>
+                    <td>15</td>
+                    <td>12</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>21</td>
+                    <td>16</td>
+                    <td>18</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
