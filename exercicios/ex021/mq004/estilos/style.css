@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;   /*inclui a borda no calculo do tamanho*/
+}
+
+html {/*Ambas configurações css são para body e para html*/
+    height: 100vh;
+}
+
+body { /*Neste caso diferente da anterior vai funcionar só para o body*/
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.842);
+    width: 400px;
+    margin: auto;/*para ficar centralizado*/
+    margin-top: 20px;
+    border-radius: 10px;/*borda ficar um pouco arredondada*/
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+}
+
+img {/*para todas as imagens*/
+    display: block;
+    margin: auto;
+}
+
+img#phone{display: block;}/*funciona para todas as imagens com id 'phone'*/    
+img#tablet{display: none;}/*funciona para todas as imagens com id 'tablet'*/
+img#print{display: none;}/*funciona para todas as imagens com id 'impressos'*/
+img#pc{display: none;}/*funciona para todas as imagens com id 'desktop-pc'*/
+img#tv{display: none;}/*funciona para todas as imagens com id 'tv'*/

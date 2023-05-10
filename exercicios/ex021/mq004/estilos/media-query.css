@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/*Todas as demais Medias*/
+
+/*Typical device Brakpoints*/
+/*2023 está assim
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+
+
+*/
+
+
+/*
+exemplo aqui desenvolvido foi se baseando nestes valores
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+@media print { /*Versão para impressão*/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);/*desnecessário por que não imprime o background*/
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através de um css para testar pagina de impressão.';
+        text-decoration: overline;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{display: none;}/*funciona para todas as imagens com id 'phone'*/    
+    img#tablet{display: none;}/*funciona para todas as imagens com id 'tablet'*/
+    img#print{display: block;}/*funciona para todas as imagens com id 'impressos'*/
+    img#pc{display: none;}/*funciona para todas as imagens com id 'desktop-pc'*/
+    img#tv{display: none;}/*funciona para todas as imagens com id 'tv'*/
+}
+
+/*
+como ja foi feita configuração de "mobile first" no css do style.css então não precisa novamente fazer essa parte
+@media screen and (max-width: 600px){/*Pequenas telas}
+@media screen and (max-width: 600px)and (max-width: 768px){Dispositivel móvel}*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+    img#phone{display: none;}/*funciona para todas as imagens com id 'phone'*/    
+    img#tablet{display: block;}/*funciona para todas as imagens com id 'tablet'*/
+    img#print{display: none;}/*funciona para todas as imagens com id 'impressos'*/
+    img#pc{display: none;}/*funciona para todas as imagens com id 'desktop-pc'*/
+    img#tv{display: none;}/*funciona para todas as imagens com id 'tv'*/
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{display: none;}/*funciona para todas as imagens com id 'phone'*/    
+    img#tablet{display: none;}/*funciona para todas as imagens com id 'tablet'*/
+    img#print{display: none;}/*funciona para todas as imagens com id 'impressos'*/
+    img#pc{display: block;}/*funciona para todas as imagens com id 'desktop-pc'*/
+    img#tv{display: none;}/*funciona para todas as imagens com id 'tv'*/
+
+}
+@media screen and (min-width: 1200px){/*Grandes Telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#phone{display: none;}/*funciona para todas as imagens com id 'phone'*/    
+    img#tablet{display: none;}/*funciona para todas as imagens com id 'tablet'*/
+    img#print{display: none;}/*funciona para todas as imagens com id 'impressos'*/
+    img#pc{display: none;}/*funciona para todas as imagens com id 'desktop-pc'*/
+    img#tv{display: block;}/*funciona para todas as imagens com id 'tv'*/
+
+}
