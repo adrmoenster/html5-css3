@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8";/* Configura caracteres especiais no css, ideal colocar inicio de todo css */
 
 /*
 exemplo aqui desenvolvido foi se baseando nestes valores
@@ -9,53 +9,55 @@ Desktop: de 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {/*CONFIGURAÇÃO PARA TABLET*/
+@media screen and (min-width: 768px) and (max-width: 992px) {/*CONFIGURAÇÃO PARA TABLET - telas condideradas de tamanho inicio 768px e de tamanho máximo 992px */
     
+    /*Oque fizer aqui modifica oque ja foi definido em style.css, mas só altera se atuar sobre mesma css, se não mexer continuará valendo a definida inicialmente em style.css, ou seja só altera para versão tablet oque definir para alterar, do contrário continua valento as definições de style.css*/
+
     body {
-        background-image: linear-gradient(to top, #5f2c82, #49a09d);
+        background-image: linear-gradient(to top, #5f2c82, #49a09d);/*Definindo uma cor gradiente própria para fundo (to top quer dizer de baixo pra cima)*/
     }
     
     section#login {
-        width: 80vw;
-        height: 280px;
+        width: 80vw;/*A largura ocupará 80 pocento da tela*/
+        height: 280px;/*A altura desta section de id de nome login terá 280px(na versão tablet)*/
     }
 
-    section#login > div#imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
+    section#login > div#imagem {/*Altera em relação a versão para celular, então estas modificações no tablet serão acatadas estas a seguir, sobrepondo as versões do celular definidas em style.css*/
+        float: left;/*Posição da imagem ficará ao lado direito*/
+        width: 30%;/*largura de 30 porcento da div de id de nome imagem que está dentro da section de id de nome login*/
+        height: 100%;/*Altura de 100 porcento da div de id de nome imagem que está dentro da section de id de nome login*/
     }
 
-    section#login > div#formulario {
-        float: right;
-        width: 70%;
+    section#login > div#formulario {/*Altera em relação a versão para celular, então estas modificações no tablet serão acatadas estas a seguir, sobrepondo as versões do celular definidas em style.css*/
+        float: right;/*Posição do formulário ficará ao lado direito*/
+        width: 70%;/*largura de 70 porcento da div de id de nome formulario que está dentro da section de id de nome login*/
     }
 }
 
-@media screen and (min-width: 992px) {/*CONFIGURAÇÃO PARA TELAS GRANDES*/
+@media screen and (min-width: 992px) {/*CONFIGURAÇÃO PARA TELAS GRANDES - telas condideradas de tamanho inicio 992px e superiores a este tamanho */
 
     body {
-        background-image: linear-gradient(to top, #5f2c82, #49a09d);
+        background-image: linear-gradient(to top, #5f2c82, #49a09d);/*Definindo posição e cor do background */
     }
     
-    section#login {
-        width: 950px;
-        height: 350px;
+    section#login {/*Alterações vão ocorrer no id de nome "login" que estiver dentro da section*/
+        width: 950px;/*Largura da section de id de nome "login" passa a ser de 950px, neste caso ficou uma largura fixa*/
+        height: 350px;/*Altura da section de id de nome "login" passa a ser de 350px, neste caso ficou uma altura fixa*/
     }
-    section#login > div#imagem {
-        float: right;
-        width: 50%;
-        height: 100%;
+    section#login > div#imagem {/*Alterações vão ocorrer no id de nome login da div que está dentro da section de id login*/
+        float: right;/*Posicionando o conteudo ao lado direito*/
+        width: 50%;/*Ocupando 50 porcento da largura*/
+        height: 100%;/*Altura ocupando 100 porcento*/
     }
-    section#login > div#formulario {
-        float: left;
-        width: 50%;
+    section#login > div#formulario {/*Alterações vão ocorrer no id da div de nome "formulario" que estiver dentro da section de id de nome login*/
+        float: left;/*Posicionando o conteudo ao lado esquerdo*/
+        width: 50%;/*Ocupando 50 porcento da largura*/
     }
     div#formulario > h1 {
-        font-size: 2em;
+        font-size: 2em;/*Tamanho da fonte do seletor "h1" que estiver dentro da div de id de nome formulário*/
     }
-    div#formulario > p {
-        font-size: 1em;
-        margin: 20px 0px;
+    div#formulario > p {/*Alterações vão ocorrer no "paragrafo" que estiver dentro da div de id de nome "formulario"*/
+        font-size: 1em;/*Tamanho da fonte do seletor "p" que estiver dentro da div de id de nome "formulario"*/
+        margin: 20px 0px;/*Margem de 20px em cima e abaixo e de 0px ao lado direito e lado esquerdo*/
     }
 }

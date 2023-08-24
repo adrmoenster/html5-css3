@@ -1,138 +1,145 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Configura caracteres especiais no css, ideal colocar inicio de todo css */
+
+
+/*Configurando inicialmente para celulares, forma de criação chamada "Mobile-first" este css então irá configurar formatações para celulares(mobile)*/
 
 /*
-    Paleta de cores
+    Paleta de cores//Definir no inicio do projeto uma paleta com as cores que pretende usar ou ao menos que serão mais comum no site
     Verde: #49a09d
     Lilás: #5f2c82
 
 */
 
-* {
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {/*Primeiras configurações o asteristico representa "reset" ou seja o inicio, como tudo se iniciará*/
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*Define qual será a fonte utilizada no site*/
+    padding: 0px;/*zerando os paddins, assim não tendo nenhum paddin inicial*/
+    margin: 0px;/*zerando as margens, assim não tendo nenhuma margem inicial*/
+    box-sizing: border-box;/*Borda faz parte da conta de largura*/
 }
 
-body, html {
-    background-color: #49a09d;
-    height: 100vh;
-    width: 100vw;
+body, html {/*Configurando o corpo e o Html juntos, as configurações serão aplicada a ambos*/
+    background-color: #49a09d;/*Cor utilizada no fundo*/
+    height: 100vh;/*Altura da página, (100vh quer dizer, cem porcento da altura da tela)*/
+    width: 100vw;/*Largura da página, (100vw quer dizer, cem porcento da largura da tela)*/
 }
 
 main {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
+    position: relative;/*utilizado para centralizar*/
+    height: 100vh;/*cem porcendo da altura*/
+    width: 100vw;/*cem porcento da largura*/
 }
 
-section#login {
-    position: absolute;
-    top: 50%;
-    left: 50%;   
-    overflow: hidden;
-    background-color: white;
-    width: 260px;
-    height: 515px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
-    transform: translate(-50%, -50%);
-    transition: width 0.3s, height 0.3s;/*Animação conforme muda de tamanho de tela*/
-    transition-timing-function: ease;/*Animação ao mudar de tamanho de tela fica mais suave*/
+section#login {/*configurando section de id login*/
+    position: absolute;/*Posicionamento da seção de id login na página, neste caso será absolute(testar opções e entenderá)*/
+    top: 50%;/*Ocupando 50% da parte superior da section de id login*/
+    left: 50%;/*Ocupando 50% do lado esquedo desta section de id login*/
+    /*As trez configurações anteriores fazem a section ir para meio da tela, no caso quina esquerda supertior fica ao meio da tela*/
+
+    overflow: hidden;/*Tudo oque estiver para fora da borda ficará escondida(neste caso faz "border-radius" funcionar ao aplicar imagem de background)*/
+    background-color: white;/*Cor de fundo da tela de login, ou seja desta section*/
+    width: 260px;/*Largura da tela de, ou seja desta section*/
+    height: 515px;/*Altura da tela de login, ou seja desta section*/
+    border-radius: 20px;/*Faz o arredondamento das bordas desta section*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);/*Cria um sombreamento por traz da section de id login*/
+    transform: translate(-50%, -50%);/*Faz corrigir posição da section puxando  e fazendo ficar ao centro da tela, independente da resolução*/
+    transition: width 0.3s, height 0.3s;/*Animação conforme transição que muda de tamanho de tela*/
+    transition-timing-function: ease;/*Animação ao mudar de tamanho de tela fica mais suave(feita em "transition")*/
 }
 
-section#login > div#imagem {
-    display: block;
-    background: #5f2c82 url(../img/door.jpg) no-repeat;
-    background-size: cover;
-    background-position: left top;
-    height: 200px;
+section#login > div#imagem {/*Configurações da div de id imagem que estiver dentro da section de id login*/
+    display: block;/*é exibida como um bloco por padrão*/
+    background: #5f2c82 url(../img/door.jpg) no-repeat;/*Aplicando uma imagem como background na div especifica, tendo uma cor de fundo*/
+    background-size: cover;/*Define padrão de tamanho da imagem que irá aparecer(padroes prontos, testar opções existentes)*/
+    background-position: left top;/*Qual será a posição da imagem que vai aparecer, neste caso parte superior esquerda*/
+    height: 200px;/*Definindo qual tamamnho da imagem puxada pelo background que irá aparecer*/
 }
 section#login > div#formulario {
-    display: block;
-    padding: 10px;
+    display: block;/*é exibida como um bloco por padrão*/
+    padding: 10px;/*Padin de 10Px dos lados direito e esquedo e também em cima e embaixo*/
 }
 
 div#formulario > h1 {
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: center;/*Alinha o texto ao centro*/
+    margin-bottom: 10px;/*Margem na parte inferior(de baixo) de 10px*/
 }
 
 div#formulario > p {
-    font-size: 0.8em;
+    font-size: 0.8em;/*Tamanho da fonte que estarão no paragrafo que está dentro da div de id de nome formulário*/
 }
 
-form > div.campo {
-    background-color: #5f2c82;
-    border: 2px solid #5f2c82;
-    display: block;
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    margin: 5px 0px;
+form > div.campo {/*Configurações vão ocorrer na classe de nome "campo" da div que estiver dentro do form(formulario)*/
+    background-color: #5f2c82;/*Cor de fundo da classe de nome campo*/
+    border: 2px solid #5f2c82;/*tamanho, tipo e cor da borda do campo div cm classe de nome "campo"*/
+    display: block;/*torna a classe campo do formulario como um unico bloco*/
+    width: 100%;/*largura ocupando 100%*/
+    height: 40px;/*Altura do campo definido em 40px*/
+    border-radius: 8px;/*arredondamento das boras*/
+    margin: 5px 0px;/*margem de 5px para embaixo e em cima, mas sem margem a direita ou esqueda*/
 }
 
-div.campo > label {
-    display: none;
+div.campo > label {/*label que fica dentro da div de classe com nome "campo"*/
+    display: none;/*retira textos das labels de login e senha*/
 }
 
-div.campo > span {
-    color: white;
+div.campo > span {/*span que fica dentro da div com classe de nome "campo" (icones do google icons)*/
+    color: white;/*cor do desenho do icone*/
     
-    font-size: 2em;
-    width: 40px;
-    padding: 5px;
+    font-size: 2em;/*tamanho da font do icone*/
+    width: 40px;/*largura do campo*/
+    padding: 5px;/*paddin de cima de baixo, ao lado esquerdo e direito definido em 5px cada*/
 }
 
-div.campo > input {
-    background-color: #6cd3cf;
-    font-size: 1em;
-    width: calc(100% - 44px);
-    height: 100%;
-    border: 0px;
-    border-radius: 8px;
-    padding: 4px;
+div.campo > input {/*input que fica dentro da div com classe de nome "campo"*/
+    background-color: #6cd3cf;/*cor de fundo do input*/
+    font-size: 1em; /*tamanho da fonte do input*/
+    width: calc(100% - 44px);/*css faz calculo para definir valor a ser adicionado*/
+    height: 100%;/*altura do campo de input, neste caso ocupando todo espaço*/
+    border: 0px;/*não utilizando nenhuma borda*/
+    border-radius: 8px;/*Fazendo arredondamento das bordas do campo input*/
+    padding: 4px;/*Padding de 4px sobre, abaixo, ao lado direito e esquerdo do input*/
     transform: translateY(-13px);/*transformações deixar na ultima linha sempre que possível*/ 
 }
 
 div.campo > input:focus-within{/*ganhar foco*/
-    background-color: white; 
+    background-color: white; /*cor de fundo do foco será branco quando clicado*/
 }
 
-form > input[type=submit] {
-    display: block;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    background-color: #49a09d;
-    color: white;
-    border: none;
-    border-radius: 5px;  
-    cursor: pointer; 
+form > input[type=submit] {/*configura o botão do submit que é um input que está dentro do "form" formulario */
+    display: block;/*Transforma o botão em um bloco*/
+    font-size: 1em;/*Tamanho da fonte*/
+    width: 100%;/*Tamanho da largura total, neste caso não pode ser 100vw porque neste caso é 100% do container*/
+    height: 40px;/*Altura do botão*/
+    background-color: #49a09d;/*Cor de fundo do botão*/
+    color: white;/*Cor do texto do botão*/
+    border: none;/*Boder definida como não tem borda*/
+    border-radius: 5px;/*Arredondamento das bordas do botão*/  
+    cursor: pointer; /*Ao passar mouse sobre botão então cursor do mouse vira uma pequena mão*/
 }
-form > input[type=submit]:hover {
-    background-color: #2d6462;
-}
-
-form > a.botao {
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    width: 100%;
-    height: 40px;
-    padding-top: 5px;
-    margin-top: 5px;
-    background-color:white ;
-    color: #2d6462;
-    border: 1px solid #49a09d;
-    border-radius: 7px;
-    text-decoration: none;
+form > input[type=submit]:hover {/*configura ação ao passar mouse sobre o botão do submit que é um input que está dentro do "form" formulario */
+    background-color: #2d6462;/*cor de fundo ao passar mouse sobre botão*/
 }
 
-form > a.botao:hover {
-    background-color: #6cd3cf;
+form > a.botao {/*Configura link da classe de nome "botão" que está dentro do "form"(formulario)*/
+    display: block;/*Transforma botão em um bloco unico*/
+    text-align: center;/*Alinha do texto do botão ao centro*/
+    font-size: 1em;/*Tamanho da fonte utilizada no botão*/
+    width: 100%; /*Tamanho da largura total, neste caso não pode ser 100vw porque neste caso é 100% do container*/
+    height: 40px;/*altura total do botão*/
+    padding-top: 5px;/*paddin superior de 5px*/
+    margin-top: 5px;/*margem superior de 5px*/
+    background-color:white ;/*Cor de fundo do botão*/
+    color: #2d6462;/*Cor do texto no botão*/
+    border: 1px solid #49a09d;/*Configuração da borda do botão, com expesura tipo e cor*/
+    border-radius: 7px;/*Arredondamento das bordas do botão*/
+    text-decoration: none;/*Link aqui passa não ter mais sublinhado como é padrão inicial*/
 }
 
-form > a.botao >span {
-    font-size: 0.8em;
+form > a.botao:hover {/*Configura ação de passar mouse sobre link da classe de nome "botão" que está dentro do "form"(formulario)*/
+    background-color: #6cd3cf;/*Cor de fundo ao passar mouse sobre o botão*/
 }
+
+form > a.botao > span {/*Configura icone que está no link da classe de nome "botão" que está dentro do "form"(formulario) na opção esqueci a senha */
+    font-size: 0.8em;/*Tamanho da fonte (icone) disponível no botão*/
+}
+
+
